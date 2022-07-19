@@ -30,3 +30,11 @@ y = time.time()
  
 print(c)
 print("Non-vectorized version: " + str(1000*(y-x))+"ms")
+
+import numpy as np
+array1 = np.array([30,60,90])
+array2 = np.array([1,2,3,30])
+  
+res = np.intersect1d(array1,array2, assume_unique=True)
+  
+print(res)
